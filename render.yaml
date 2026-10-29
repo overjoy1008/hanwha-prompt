@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: hanwha-prompt
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: ./dist

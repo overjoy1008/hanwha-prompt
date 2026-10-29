@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="40분 PT 준비를 위한 근거 중심 프롬프트. 주제를 입력하고 복사하거나 다운로드하세요.">
+<meta name="theme-color" content="#f6f5f1"><title>hanwha-prompt — PT 준비의 시작</title>
+<link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+</head>
+<body>
+<header class="wrap"><a class="brand" href="./" aria-label="hanwha-prompt 홈"><span class="brand-icon">h<span>·</span></span>hanwha-prompt</a><span class="header-note">INTERVIEW TOOLKIT <span>01</span></span></header>
+<main class="wrap">
+<section class="intro"><div class="eyebrow"><span class="dot"></span> FINANCE × AI · DATA</div><h1>좋은 PT는<br><span>좋은 질문</span>에서 시작합니다.</h1><p>주제 하나로, 근거부터 실행안까지.<br>발표 준비에 바로 쓸 수 있는 프롬프트를 가져가세요.</p><div class="chips"><span><strong>40분</strong> 과제 준비</span><span><strong>30분</strong> 발표</span><span><strong>PDF</strong> 제출</span></div></section>
+<section class="workspace" aria-label="PT 프롬프트 만들기">
+<div class="editor"><div class="section-top"><span class="step">01 / INPUT</span><span class="small">입력 내용은 서버에 저장되지 않습니다</span></div><h2>무엇을 발표하나요?</h2>
+<form id="prompt-form">
+<label for="topic">PT 주제</label><textarea id="topic" rows="3" placeholder="예: 생성형 AI를 활용한 보험 고객 상담 품질 개선 방안"></textarea>
+<div class="field-row"><div><label for="company">회사</label><input id="company" value="한화생명" maxlength="100"></div><div><label for="role">지원 직무</label><input id="role" value="AI·데이터" maxlength="100"></div></div>
+<label for="name">이름 <span class="optional">제출 파일명에 사용</span></label><input id="name" placeholder="이름 입력" maxlength="60">
+<label for="context">제공 자료 · 프로젝트 경험 <span class="optional">선택</span></label><textarea id="context" rows="4" placeholder="과제 자료, 경험, 실제 성과를 붙여넣으세요. 프로젝트형은 입력한 경험만 사용하도록 안내합니다."></textarea>
+<div class="filename"><span>제출 파일명</span><strong id="filename">AI·데이터_이름.pdf</strong></div>
+<div class="rule"><span>↗</span><p>현장의 과제·시간·파일명 안내가 우선입니다.<br>발표 30분의 질의응답 포함 여부는 현장에서 확인하세요.</p></div>
+</form></div>
+<div class="preview-panel"><div class="section-top"><span class="step">02 / YOUR PROMPT</span><span id="char-count" class="small">불러오는 중</span></div><div class="preview-heading"><h2>바로 사용할 프롬프트</h2><span class="live"><i></i> LIVE</span></div><div class="outline"><span>근거 검색</span><span>문제 정의</span><span>해결·검증</span><span>슬라이드 구성</span></div><label class="sr-only" for="preview">완성된 프롬프트</label><textarea id="preview" readonly spellcheck="false" aria-label="완성된 프롬프트"></textarea><div class="actions"><button id="copy" type="button" class="primary">프롬프트 복사 <span>↗</span></button><button id="download" type="button" class="secondary">TXT 다운로드 <span>↓</span></button></div><div class="below-actions"><span>ChatGPT에 붙여넣어 시작하세요.</span><button id="markdown" type="button">Markdown으로 받기 ↓</button></div><p id="status" role="status" aria-live="polite"></p></div>
+</section>
+<section class="guide"><div><span class="step">HOW TO USE</span><h2>준비는 짧게.<br>논리는 단단하게.</h2></div><ol><li><span>01</span><div><h3>주제와 자료 입력</h3><p>받은 주제와 실제 경험을 넣으세요.</p></div></li><li><span>02</span><div><h3>복사하거나 다운로드</h3><p>완성된 프롬프트를 ChatGPT에 전달하세요.</p></div></li><li><span>03</span><div><h3>근거 확인 후 발표 준비</h3><p>출처와 수치를 확인하고 PPT를 PDF로 제출하세요.</p></div></li></ol></section>
+</main><footer class="wrap"><span>hanwha-prompt</span><p>개인 면접 준비 도구 · 한화 공식 사이트가 아닙니다.</p><a href="prompt.txt" download="hanwha-prompt-template.txt">원본 템플릿 ↓</a></footer>
+</body></html>
